@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⌨️ Typing Speed Test</title>
+</head>
+<body>
+    <section class="typing-test-content">
+        <h1 class="typing-text-heading">Check Your Typing Speed</h1>
+        <p class="timer" id="timer">0</p>
+        <div class="container">
+            <p class="quote-content" id="quote-content">This is the Quote</p>
+            <textarea class="quote-input" name="quote-input" id="quote-input" autofocus="true">Starting typing...</textarea>
+        </div>  
+        <!-- <div class="resultsContainer hide" id="resultsContainer">
+            <div class="results-data">
+                <div class="data-points">
+                    <p class="data-point">Words Per Minute</p>
+                    <p class="data-point">Accuracy</p>
+                    <p class="data-point">Keystrokes</p>
+                    <p class="data-point">Wrong keystrokes</p>
+                </div>
+                <div class="result-points">
+                    <p class="result-point" id="displayWPM"></p>
+                    <p class="result-point" id="displayAccuracy"></p>
+                    <p class="result-point" id="displayKeyStrokes"></p>
+                    <p class="result-point" id="displayWrongKeyStrokes"></p>
+                </div>
+            </div>
+        </div>  -->
+        <div class="resultsContainer hide" id="resultsContainer">
+            <div class="resultsTable">
+              <table cellspacing = "2">
+                  <thead>
+                      <tr class="headers">
+                        <th colspan = "2" rowspan="1" class="headerItem">
+                            WordsPerMin[WPM] 
+                         </th>
+                         <th rowspan = "2" colspan="2" class="headerItem">
+                           Accuracy 
+                        </th>
+                        <th colspan = "3" rowspan="1" class="headerItem">
+                           KeyStrokes 
+                        </th>
+                      </tr>
+                      <tr class="subHeaders">
+                          <th class="subHeaderItem">
+                              Gross
+                          </th>
+                          <th class="subHeaderItem">
+                              net
+                          </th>
+                          <th class="subHeaderItem" colspan="2">
+                              Total
+                          </th>
+                          <th class="subHeaderItem" colspan="1">
+                              Wrong
+                          </th>
+                      </tr>
+                  </thead>
+                  <tr class="tableData">
+                      <td colspan="1" id="displayGrossWPM">
+                          50
+                      </td>
+                      <td colspan="1" id="displayNetWPM">
+                          50
+                      </td>
+                      <td colspan="2" id="displayAccuracy">
+                          95%
+                      </td>
+                      <td colspan="2" id="displayTotalKeyStrokes">
+                          120
+                      </td>
+                      <td colspan="1" id="displayWrongKeyStrokes">
+                          15
+                      </td>
+                  </tr>
+              </table>
+              
+            </div>
+        </div>
+    </section>
+</body>
+</html>
